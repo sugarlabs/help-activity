@@ -18,10 +18,10 @@ from gettext import gettext as _
 
 import gi
 gi.require_version('Gtk', '3.0')
-gi.require_version('WebKit', '3.0')
+gi.require_version('WebKit2', '4.0')
 from gi.repository import Gtk
 from gi.repository import GObject
-from gi.repository import WebKit
+from gi.repository import WebKit2 as WebKit
 
 from sugar3.activity import activity
 from sugar3.graphics.toolbutton import ToolButton
@@ -56,7 +56,6 @@ class HelpActivity(activity.Activity):
         self.props.max_participants = 1
 
         self._web_view = WebKit.WebView()
-        self._web_view.set_full_content_zoom(True)
 
         _scrolled_window = Gtk.ScrolledWindow()
         _scrolled_window.add(self._web_view)
@@ -118,7 +117,7 @@ class HelpActivity(activity.Activity):
 
         self.set_canvas(_scrolled_window)
         self._web_view.show()
-        self._web_view.connect("resource-request-starting",
+        self._web_view.connect("resource-load-started",
                                self._resource_request_starting_cb)
         self._web_view.load_uri(get_index_uri())
 
