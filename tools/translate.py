@@ -19,7 +19,7 @@ import json
 from textwrap import wrap
 try:
     import urllib2 as request
-    from urllib import quote
+    from urllib.parse import quote
 except:
     from urllib import request
     from urllib.parse import quote
