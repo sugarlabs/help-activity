@@ -30,34 +30,11 @@ class ViewToolbar(Gtk.Toolbar):
 
         self._browser = self._activity._web_view
 
-        self.zoomout = ToolButton('zoom-out')
-        self.zoomout.set_tooltip(_('Zoom out'))
-        self.zoomout.connect('clicked', self.__zoomout_clicked_cb)
-        self.insert(self.zoomout, -1)
-        self.zoomout.show()
-
-        self.zoomin = ToolButton('zoom-in')
-        self.zoomin.set_tooltip(_('Zoom in'))
-        self.zoomin.connect('clicked', self.__zoomin_clicked_cb)
-        self.insert(self.zoomin, -1)
-        self.zoomin.show()
-
-        self.separator = Gtk.SeparatorToolItem()
-        self.separator.set_draw(True)
-        self.insert(self.separator, -1)
-        self.separator.show()
-
         self.fullscreen = ToolButton('view-fullscreen')
         self.fullscreen.set_tooltip(_('Fullscreen'))
         self.fullscreen.connect('clicked', self.__fullscreen_clicked_cb)
         self.insert(self.fullscreen, -1)
         self.fullscreen.show()
-
-    def __zoomin_clicked_cb(self, button):
-        self._browser.zoom_in()
-
-    def __zoomout_clicked_cb(self, button):
-        self._browser.zoom_out()
 
     def __fullscreen_clicked_cb(self, button):
         self._activity.fullscreen()
