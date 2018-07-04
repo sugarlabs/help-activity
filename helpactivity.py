@@ -56,6 +56,8 @@ class HelpActivity(activity.Activity):
         self.props.max_participants = 1
 
         self._web_view = WebKit.WebView()
+        level = self._web_view.props.zoom_level
+        self._web_view.set_zoom_level(level)
 
         _scrolled_window = Gtk.ScrolledWindow()
         _scrolled_window.add(self._web_view)
@@ -118,11 +120,10 @@ class HelpActivity(activity.Activity):
         self.set_canvas(_scrolled_window)
         self._web_view.show()
         self._web_view.connect("resource-load-started",
-                               self._resource_request_starting_cb)
+                               self._resource_load_started_cb)
         self._web_view.load_uri(get_index_uri())
 
-    def _resource_request_starting_cb(self, webview, web_frame, web_resource,
-                                      request, response):
+    def _resource_load_started_cb(self, webview, web_resource, request):
         uri = web_resource.get_uri()
         if uri.find('_images') > -1:
             if uri.find('/%s/_images/' % get_current_language()) > -1:
