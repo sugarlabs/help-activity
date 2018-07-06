@@ -56,8 +56,6 @@ class HelpActivity(activity.Activity):
         self.props.max_participants = 1
 
         self._web_view = WebKit.WebView()
-        level = self._web_view.props.zoom_level
-        self._web_view.set_zoom_level(level)
 
         _scrolled_window = Gtk.ScrolledWindow()
         _scrolled_window.add(self._web_view)
