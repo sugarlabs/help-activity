@@ -24,6 +24,7 @@ from gi.repository import GObject
 from gi.repository import WebKit2 as WebKit
 
 from sugar3.activity import activity
+from sugar3.graphics import style
 from sugar3.graphics.toolbutton import ToolButton
 from sugar3.graphics.toolbarbox import ToolbarBox
 from sugar3.graphics.toolbarbox import ToolbarButton
@@ -31,6 +32,9 @@ from sugar3.activity.widgets import ActivityToolbarButton
 from sugar3.activity.widgets import StopButton
 
 from viewtoolbar import ViewToolbar
+
+ZOOM_ORIGINAL = style.zoom(100 * 100 / 72) / 100.0
+_ZOOM_AMOUNT = 0.1
 
 
 def get_current_language():
@@ -56,6 +60,7 @@ class HelpActivity(activity.Activity):
         self.props.max_participants = 1
 
         self._web_view = WebKit.WebView()
+        self._web_view.props.zoom_level = ZOOM_ORIGINAL
 
         _scrolled_window = Gtk.ScrolledWindow()
         _scrolled_window.add(self._web_view)
@@ -160,6 +165,12 @@ class HelpActivity(activity.Activity):
         f = open(file_path, "w")
         json.dump(data, f)
         f.close()
+
+    def zoom_in(self):
+        self._web_view.props.zoom_level = self._web_view.props.zoom_level + _ZOOM_AMOUNT
+
+    def zoom_out(self):
+        self._web_view.props.zoom_level = self._web_view.props.zoom_level - _ZOOM_AMOUNT
 
 
 class Toolbar(Gtk.Toolbar):
