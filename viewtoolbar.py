@@ -20,6 +20,9 @@ from gi.repository import Gtk
 from gi.repository import GObject
 
 from sugar3.graphics.toolbutton import ToolButton
+from sugar3.graphics import style
+
+ZOOM_ORIGINAL = style.zoom(100 * 100 / 72) / 100.0
 
 
 class ViewToolbar(Gtk.Toolbar):
@@ -30,17 +33,23 @@ class ViewToolbar(Gtk.Toolbar):
 
         self._browser = self._activity._web_view
 
-        self.zoomout = ToolButton('zoom-out')
+        self.zoomout = ToolButton('zoom-out', accelerator='<ctrl>minus')
         self.zoomout.set_tooltip(_('Zoom out'))
         self.zoomout.connect('clicked', self.__zoomout_clicked_cb)
         self.insert(self.zoomout, -1)
         self.zoomout.show()
 
-        self.zoomin = ToolButton('zoom-in')
+        self.zoomin = ToolButton('zoom-in', accelerator='<ctrl>plus')
         self.zoomin.set_tooltip(_('Zoom in'))
         self.zoomin.connect('clicked', self.__zoomin_clicked_cb)
         self.insert(self.zoomin, -1)
         self.zoomin.show()
+
+        self.zoom_original = ToolButton('zoom-original', accelerator='<ctrl>0')
+        self.zoom_original.set_tooltip(_('Actual size'))
+        self.zoom_original.connect('clicked', self.__zoom_original_clicked_cb)
+        self.insert(self.zoom_original, -1)
+        self.zoom_original.show()
 
         self.separator = Gtk.SeparatorToolItem()
         self.separator.set_draw(True)
@@ -54,10 +63,13 @@ class ViewToolbar(Gtk.Toolbar):
         self.fullscreen.show()
 
     def __zoomin_clicked_cb(self, button):
-        self._browser.zoom_in()
+        self._activity.zoom_in()
 
     def __zoomout_clicked_cb(self, button):
-        self._browser.zoom_out()
+        self._activity.zoom_out()
+
+    def __zoom_original_clicked_cb(self, button):
+        self._browser.set_zoom_level(ZOOM_ORIGINAL)
 
     def __fullscreen_clicked_cb(self, button):
         self._activity.fullscreen()
