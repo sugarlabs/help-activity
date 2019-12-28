@@ -9,7 +9,7 @@ About
 
 .. image :: ../images/Sliderule-activity-icon.png
 
-"The 'slide rule <http://en.wikipedia.org/wiki/>'_ also known colloquially as a slipstick, is a mechanical analog computer." This Activity implements a basic slide rule with C, D, A, and L scales and can be used for multiplication, division, roots, addition and subtraction.
+"The `slide rule <http://en.wikipedia.org/wiki/>`_ also known colloquially as a slipstick, is a mechanical analog computer." This Activity implements a basic slide rule with C, D, A, and L scales and can be used for multiplication, division, roots, addition and subtraction.
 
 .. image :: ../images/SlideruleC.png
 
@@ -27,7 +27,7 @@ The L scales are used for addition and subtraction.
 
 User-defined slides and stators can be created on the fly.
 
-A nice discussion of the slide rule is found here '<http://www.ryereflections.org/servlet/pluto?state=3030347061676530303757656250616765303032696430303438373235>'_
+A nice discussion of the slide rule is found here `<http://www.ryereflections.org/servlet/pluto?state=3030347061676530303757656250616765303032696430303438373235>`_
 
 
 Using Slide Rule
@@ -61,14 +61,14 @@ The Custom Slide Toolbar is used to make a custom slide. From left to right:
 * the step size by which to iterate between minimum and maximum when generating marks
 * the gear-shaped button is used to create the custom slide
 
-.. image :: ../images/Statorulecustomtoolbar.jpg
+.. image :: ../images/Statorcustomtoolbar.jpg
 
 The Custom Stator Toolbar is identical in functionality to the Custom Slide Toolbar.
 
 In the values shown in the illustration of the Custom Toolbar are used to generate a C (log) slide:
-* the position is determined by ''f''(''x'') = ''log''(''x'', 10)
-* the result (the inverse of ''f''(''x'')) is ''f<sup>-1</sup>''(''x'') = ''pow''(10, ''x'')
-* the label is ''g''(''x'') = ''x''
+* the position is determined by *f*(*x*) = *log*(*x*, 10)
+* the result (the inverse of *f*(*x*)) is *f<sup>-1</sup>*(*x*) = *pow*(10, *x*)
+* the label is *g*(*x*) = *x*
 * the domain is from 1 to 10
 * the step size is 1.
 
@@ -135,7 +135,7 @@ Division is the opposite of multiplication. First position the reticle over the 
 Position the reticule over 2.62 on the D stator. Position 1.31 on the C slide under the reticule.
 .. image :: ../images/Sliderule-2D.png
 
- Read the results from the D stator.
+Read the results from the D stator.
 
 
 Overflow on Multiplication or Division
@@ -147,11 +147,11 @@ Square
 
 You use the A slide and D stator to square number. (A is a log-squared scale.) Simply position the reticule of number you want to square on the D stator and read the result off of the A slide. Remember to properly estimate the proper decimal point for your result. **Note**: the slide and stator must be aligned in order to calculate the square of a number. 
 
-''e''<sup>2</sup> = 7.4
+*e*<sup>2</sup> = 7.4
 
 .. image :: ../images/Sliderule-e-squared.png
 
-Position the reticule over ''e'' on the D stator and read the results off of the A slide.
+Position the reticule over *e* on the D stator and read the results off of the A slide.
 
 Square root
 :::::::::::
@@ -204,14 +204,14 @@ To multiply, add the logarithms, to divide, subtract. See how the C and D scales
 
 Tutorials
 ---------
-'Chapter 1 <https://wiki.sugarlabs.org/go/File:Slideruletute.pdf>'_
+`Chapter 1 <https://wiki.sugarlabs.org/go/File:Slideruletute.pdf>`_
 
-'Chapter 2 <https://wiki.sugarlabs.org/go/File:Slideruletute-ch2.pdf>'_
+`Chapter 2 <https://wiki.sugarlabs.org/go/File:Slideruletute-ch2.pdf>`_
 
 Just for fun
 ------------
-Tony Forster has created slide rules in 'Turtle Art <http://tonyforster.blogspot.com/2010/09/turtle-sliderule.html>'_, 'GameMaker <http://www.freewebs.com/schoolgamemaker/#lobject>'_, and 'Pippy <http://tonyforster.blogspot.com/2010/09/pippy-sliderule.html>'_.
+Tony Forster has created slide rules in `Turtle Art <http://tonyforster.blogspot.com/2010/09/turtle-sliderule.html>`_, `GameMaker <http://www.freewebs.com/schoolgamemaker/#lobject>`_, and `Pippy <http://tonyforster.blogspot.com/2010/09/pippy-sliderule.html>`_.
 
 Reporting problems
 ------------------
-If you discover a bug in the program or have a suggestion for an enhancement, please 'create an issue <https://github.com/sugarlabs/sliderule/issues>'_
+If you discover a bug in the program or have a suggestion for an enhancement, please `create an issue <https://github.com/sugarlabs/sliderule/issues>`_
