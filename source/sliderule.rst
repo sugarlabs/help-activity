@@ -67,7 +67,7 @@ The Custom Stator Toolbar is identical in functionality to the Custom Slide Tool
 
 In the values shown in the illustration of the Custom Toolbar are used to generate a C (log) slide:
 * the position is determined by *f*(*x*) = *log*(*x*, 10)
-* the result (the inverse of *f*(*x*)) is *f<sup>-1</sup>*(*x*) = *pow*(10, *x*)
+* the result (the inverse of *f*(*x*)) is *f*⁻¹(*x*) = *pow*(10, *x*)
 * the label is *g*(*x*) = *x*
 * the domain is from 1 to 10
 * the step size is 1.
@@ -119,6 +119,7 @@ To multiply, you use the C (log) slide and D (log) stator. (Addition in log scal
 .. image :: ../images/Sliderule-2D.png
 
 Position the end of the C slide over 2 on the D stator
+
 .. image :: ../images/Sliderule-1.31C.png
 
 Position the reticule over 1.31 on the C slide and read the results (2.62) from the D stator.
@@ -133,6 +134,7 @@ Division is the opposite of multiplication. First position the reticle over the 
 .. image :: ../images/Sliderule-1.31C.png
 
 Position the reticule over 2.62 on the D stator. Position 1.31 on the C slide under the reticule.
+
 .. image :: ../images/Sliderule-2D.png
 
 Read the results from the D stator.
@@ -147,7 +149,7 @@ Square
 
 You use the A slide and D stator to square number. (A is a log-squared scale.) Simply position the reticule of number you want to square on the D stator and read the result off of the A slide. Remember to properly estimate the proper decimal point for your result. **Note**: the slide and stator must be aligned in order to calculate the square of a number. 
 
-*e*<sup>2</sup> = 7.4
+*e*² = 7.4
 
 .. image :: ../images/Sliderule-e-squared.png
 
@@ -174,6 +176,7 @@ To add you use the linear slides, L and L. First position the end of the top L s
 .. image :: ../images/Sliderule-LL1.png
 
 Position the end of the upper L slide over 1.1 on the lower L slide.
+
 .. image :: ../images/Sliderule-LL2.png
 
 Position the reticule over 2.1 on the upper L slide and read the result (3.2) from the lower L slide.
@@ -188,6 +191,7 @@ To subtract, you also use the L (linear) slide and stator. Position the reticule
 .. image :: ../images/Sliderule-LL2.png
 
 Position the reticule over the minuend (3.2) on the L stator and the subtrahend (2.1) on the L slide.
+
 .. image :: ../images/Sliderule-LL1.png
 
 Read the difference (1.1) from the L stator.
@@ -198,7 +202,7 @@ How does it work?
 
 Why does multiplication and division work on the C and D scales? 
 
-The multiplication of 100 by 1000 can be represented as 10<sup>2</sup> x 10<sup>3</sup> =10<sup>5</sup>, to multiply, just add the indices, in this case, 2+3=5. 2 and 3 are the logarithms of 100 and 1000 respectively.
+The multiplication of 100 by 1000 can be represented as 10² x 10³ = 10⁵, to multiply, just add the indices, in this case, 2+3=5. 2 and 3 are the logarithms of 100 and 1000 respectively.
 
 To multiply, add the logarithms, to divide, subtract. See how the C and D scales are compressed to their right end . Though the scales are marked with numbers, their distance along the scales are proportional to the logarithms of those numbers. When two distances are added, the logarithms of the numbers are added, if logarithms are added, numbers are multiplied.
 
