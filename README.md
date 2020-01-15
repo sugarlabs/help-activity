@@ -1,6 +1,6 @@
 ![help-activity-icon](images/Activity-help.svg)
 
-Help is an activity which aims to provide users with easy access to documentation and manuals
+Help is an activity which aims to provide users with easy access to documentation and manual
 
 Help can be accesed
 * as a [standalone activity](http://activities.sugarlabs.org/en-US/sugar/addon/4051)
