@@ -21,7 +21,10 @@ gi.require_version('Gtk', '3.0')
 gi.require_version('WebKit', '3.0')
 from gi.repository import Gtk
 from gi.repository import GObject
-from gi.repository import WebKit
+try:
+    from gi.repository import WebKit2 as WebKit
+except ModuleNotFoundError:
+    from gi.repository import WebKit
 
 from sugar3.activity import activity
 from sugar3.graphics.toolbutton import ToolButton
