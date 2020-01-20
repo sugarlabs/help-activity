@@ -17,7 +17,7 @@ When contextual help( <kbd>alt</kbd> + <kbd>shift</kbd> + <kbd>h</kbd> ) is requ
 ### How to translate:
 https://github.com/godiard/help-activity/blob/master/howto_translate.rst
 
-###### More information at
+###### More information to be found at
 http://wiki.sugarlabs.org/go/Activities/Help/Contribute
 
 Contact: godiard@gmail.com
