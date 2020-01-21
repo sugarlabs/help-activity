@@ -101,7 +101,7 @@ If Pippy is used in parallel with the :ref:`Write Activity <write>`, it is possi
 
 Learning with Pippy
 -------------------
-- for lesson plans for learning Python, see  :ref:`Pippy Lesson Plan <pippy_lessonplan>` 
+- for lesson plans for learning Python, see  :ref:`Pippy Lesson Plan <pippy-lessonplan>` .
 
 Modifying Pippy
 ---------------
