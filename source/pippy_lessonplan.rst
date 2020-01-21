@@ -1098,24 +1098,24 @@ completed. It would be easier to check the output created by the
 students is correct (as has been done in Google Code Jam), than to
 create a bot.
 
-.. |image0| image:: media/image5.png
+.. |image0| image:: ../images/pippy_lesson_plan_0.png
    :width: 3.58333in
    :height: 3.58333in
-.. |image1| image:: media/image4.png
+.. |image1| image:: ../images/pippy_lesson_plan_1.png
    :width: 6.27083in
    :height: 1.35521in
-.. |image2| image:: media/image3.png
+.. |image2| image:: ../images/pippy_lesson_plan_2.png
    :width: 6.27083in
    :height: 3.55855in
-.. |image3| image:: media/image7.png
+.. |image3| image:: ../images/pippy_lesson_plan_3.png
    :width: 3.80357in
    :height: 0.60254in
-.. |image4| image:: media/image1.png
+.. |image4| image:: ../images/pippy_lesson_plan_4.png
    :width: 6.27083in
    :height: 0.58333in
-.. |image5| image:: media/image6.png
+.. |image5| image:: ../images/pippy_lesson_plan_5.png
    :width: 6.27083in
    :height: 4.43056in
-.. |image6| image:: media/image2.png
+.. |image6| image:: ../images/pippy_lesson_plan_6.svg
    :width: 3.30729in
    :height: 3.08018in
