@@ -56,7 +56,7 @@ In order to have a successful attempt, a student should know:
 A Hello World statement can be explained as the fundamentals in the
 Python3 programming basics.
 
-print(‘Hello World’)
+>>> print(‘Hello World’)
 
 Notice , ‘Hello World’ is enclosed in ‘’ or “”, this is what makes it a
 string. All sequences of letters, words are strings. string can be
@@ -78,11 +78,11 @@ Numbers are called integers in Python. See *Module 6* for more
 information on integers. It is possible to enter numbers in Python
 without quotes:
 
-print(‘1’)
+>>> print(‘1’)
 
 And
 
-print(1)
+>>> print(1)
 
 Both of them show the same output, but are different in terms of complex
 operations. It will be extensively discussed in later modules.
@@ -134,9 +134,9 @@ At the end of the task, the student should understand:
 
    -  Example:
 
-..
+.. code-block:: python
 
-   print(“Hello”, “My”, “Name”, “Is”, “Pippy”, sep=”#”)
+      print(“Hello”, “My”, “Name”, “Is”, “Pippy”, sep=”#”)
 
 OUTPUT:
 
@@ -187,10 +187,9 @@ Examples:
 
 -  Find the sum of 258 chocolates and 600 toffees using the *Python Interpreter*
 
-``>>> 258 + 600``
-
-``858``
-
+>>> 258 + 600
+858
+>>>
 
 
 **MILESTONES**:
@@ -226,12 +225,11 @@ Van Rossum’s official Python examples as they are fun to learn.
 Examples:
 
 >>> toffees = 15
-
 >>> icecream = 20
-
 >>> sweets = toffees + icecream
-
->>> sweets # gives 35
+>>> sweets 
+35
+>>>
 
 **MILESTONES**:
 
@@ -247,15 +245,12 @@ Examples:
 
 2. What will the following script give as output:
 
-..
+.. code-block:: python
 
-   A = “Hello”
-
-   B = “ABC”
-
-   C = A + B
-
-   print(C)
+      A = “Hello”
+      B = “ABC”
+      C = A + B
+      print(C)
 
 .. _section-2:
 
@@ -277,23 +272,21 @@ format his answer with strings and the print statement.
 
 (i)
 
-toffees = 15
+.. code-block:: python
 
-icecream = 20
-
-sweets = toffees + icecream
-
-print(sweets) # gives 35
+      toffees = 15
+      icecream = 20
+      sweets = toffees + icecream
+      print(sweets) # gives 35
 
 (ii)
 
-toffees = 15
+.. code-block:: python
 
-icecream = 20
-
-sweets = toffees + icecream
-
-print(“I have “, sweets, “sweets with me”)
+      toffees = 15
+      icecream = 20
+      sweets = toffees + icecream
+      print(“I have “, sweets, “sweets with me”)
 
 **MILESTONES**:
 
@@ -337,14 +330,12 @@ data types in declaring variables.
 
 2. HOTS: What will be the output of
 
-..
+
+.. code-block:: python
 
    num1 = 5
-
    num2 = 6.0
-
    sum = num1 + num2
-
    print(sum)
 
 .. _section-3:
@@ -402,20 +393,14 @@ three times. This task will be beneficial in solving upcoming tasks.
 Examples:
 
 >>> str(3.0)
-
 3.0
-
 >>> int(“5”)
-
 5
-
 >>>int(“Hello”)
-
 Traceback (most recent call last):
-
 File "<stdin>", line 1, in <module>
-
 ValueError: invalid literal for int() with base 10: 'Hello'
+>>>
 
 **MILESTONES**:
 
@@ -527,15 +512,15 @@ multiplying two numbers, showing the factors of a number, etc.
 
 -  Try this
 
-..
+.. code-block:: python
 
-   **import this**
+   import this
 
-   In your terminal. This would return a poem covering all the details
-   on how to write a successful Python program. The use of str before
-   input, is corresponds to the line
+In your terminal. This would return a poem covering all the details
+on how to write a successful Python program. The use of str before
+input, is corresponds to the line
 
-   **Explicit is better than Implicit**
+**Explicit is better than Implicit**
 
 .. _exercises-2:
 
@@ -559,11 +544,8 @@ items. The Python list also offers the same a similar approach.
 Examples
 
 >>> a = [1, 2, 3]
-
 >>> a[0]
-
 1
-
 >>> a = [‘Hello’, 1, 2, [3,4]]
 
 List Indexing and string Indexing has to compared in contrast. Examples
@@ -611,20 +593,14 @@ Lists and string can be accessed with their index numbers in square
 brackets beside the variable name
 
 >>> a = [1,2,3]
-
 >>> b = “Hello”
-
 >>> a[0]
-
 1
-
 >>> b[0]
-
 H
-
 >>>a[-1] # gives the last value
-
 3
+>>>
 
 **MILESTONES**:
 
@@ -664,20 +640,17 @@ list can be accessed using [<index>]. The same applies for setting the
 values
 
 >>> a = [1, 2, 3]
-
 >>> a[0] = 2
-
 >>> a
-
 [2, 2, 3]
+>>>
 
 But for strings, something different happens.
 
 >>> a = “123”
-
 >>> a[0] = “2”
-
 TypeError: 'str' object does not support item assignment.
+>>>
 
 TypeError shows that item cannot be showed to a string. This
 establishes, the idea behind immutability.
@@ -710,13 +683,12 @@ LICENSED UNDER CC-BY-SA: khanacademy.org
 
 A pseudocode can be as simple as this:
 
-If Alice sends a message to Bob
+.. code-block:: 
 
-Bob writes a message to Alice
-
-Otherwise
-
-Bob goes to the park to play
+      If Alice sends a message to Bob
+      Bob writes a message to Alice
+      Otherwise
+      Bob goes to the park to play
 
 A pseudocode doesn’t follow any sort of syntax. It is just a way to
 express our ideas in words. It is easier to convert a pseudocode or
@@ -726,23 +698,21 @@ Example
 
 PSEUDOCODE:
 
-If it is raining today,
+.. code-block::
 
-Remember to take an umbrella
-
-If it's sunny,
-
-Take sunglasses
+      If it is raining today,
+      Remember to take an umbrella
+      If it's sunny,
+      Take sunglasses
 
 REAL Python CODE:
 
-if raining == True:
+.. code-block:: python
 
-print(“Remember to take an umbrella”)
-
-elif sunny == True:
-
-print(“Remember to take sunglasses”)
+      if raining == True:
+            print(“Remember to take an umbrella”)
+      elif sunny == True:
+            print(“Remember to take sunglasses”)
 
 If, elif and else is covered in Module 15
 
@@ -779,15 +749,13 @@ in a Python syntax. See previous flow chart example.
 
 Examples
 
-homeworkdone = True
+.. code-block:: python
 
-if homeworkdone == True:
-
-print(“Hurray”)
-
-else:
-
-print(“You should do the homework”)
+      homeworkdone = True
+      if homeworkdone == True:
+            print(“Hurray”)
+      else:
+            print(“You should do the homework”)
 
 **MILESTONES**:
 
@@ -835,13 +803,12 @@ weather forecast can be explained using while loop
 
 Example:
 
-while raining:
+.. code-block:: python
 
-print(“Take an umbrella”)
-
-else:
-
-print(“Take your sunglasses”)
+      while raining:
+            print(“Take an umbrella”)
+      else:
+            print(“Take your sunglasses”)
 
 For example, a weather provider continuously checks for the current
 weather, and updates you with this information. The script cannot be
@@ -850,13 +817,12 @@ the information again and again.
 
 Example 2:
 
-Number = 0
+.. code-block:: python
 
-while Number < 100:
-
-Number += 1
-
-print(Number)
+      Number = 0
+      while Number < 100:
+            Number += 1
+            print(Number)
 
 This will give the output of numbers from 1 to 100.
 
@@ -896,9 +862,10 @@ For loop is a complicated loop, which may not be intuitive for the
 student on the first attempt. A teaching methodology may include showing
 script first and then demonstrating it.
 
-for each in [1,2,3]:
+.. code-block:: python
 
-print(each)
+      for each in [1,2,3]:
+            print(each)
 
 This code takes *\*each\** value from this list having three numbers.
 First it takes the first element, i.e., 1 and then prints it. Next it
@@ -943,15 +910,12 @@ each time we have to do something.
 
 2. HOTS: Draw a right triangle using asterisks and a for loop. Example :
 
-..
+.. code-block:: 
 
-   \*
-
-   \*\*
-
-   \**\*
-
-   \***\*
+   *
+   **
+   ***
+   ****
 
 **Module 19: Classes, Object Oriented Programming.**
 ----------------------------------------------------
