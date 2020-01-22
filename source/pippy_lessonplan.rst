@@ -3,6 +3,12 @@
 Lesson Plan for Pippy
 =====================
 
+Requirements
+============
+- Sugar 0.116 
+- Python3.6 or later
+- Pippy Activity v74 or later
+
 Need Statement
 ==============
 
