@@ -15,7 +15,6 @@ Need Statement
 Pippy Activity currently includes the provision to :
 
 -  Write Python scripts
-
 -  Run the code
 
 It is important to explain the fundamentals of Python scripting in the
@@ -50,11 +49,8 @@ an approach is to be.
 In order to have a successful attempt, a student should know:
 
 -  What a colon is
-
 -  Differentiating parenthesis ‘(‘ from bracket ‘[‘
-
--  Comma’s
-
+-  Commas
 -  Spaces
 
 **TASK**
@@ -64,7 +60,7 @@ Python3 programming basics.
 
 >>> print(‘Hello World’)
 
-Notice , ‘Hello World’ is enclosed in ‘’ or “”, this is what makes it a
+Notice, ‘Hello World’ is enclosed in ‘’ or “”, this is what makes it a
 string. All sequences of letters, words are strings. string can be
 recognised by Python and will be shown in output.
 
@@ -72,11 +68,9 @@ The print command helps to \`print\` anything on the output. The
 language which Python understands is called Python syntax. Upon entering
 print(), Python shows whatever is in parenthesis, in the output.
 
--  Show the student name in output
-
--  Show the student’s favorite item in the output
-
--  Execute his/her name in the output
+-  Show the student name in output.
+-  Show the student’s favorite item in the output.
+-  Execute his/her name in the output.
 
 NOTE:
 
@@ -100,8 +94,7 @@ operations. It will be extensively discussed in later modules.
 **EXERCISES**:
 
 1. Write a Python script to show your name as output.
-
-2. Write a Python script to display your age
+2. Write a Python script to display your age.
 
 
 **Module 2: Print using multiple values**
@@ -114,7 +107,7 @@ operations. It will be extensively discussed in later modules.
 *OBJECTIVE: Understanding arguments in a built in function, print() to
 display many items.*
 
-Open the Pippy Activity, and toggle the ‘output panel’.
+Open the Pippy Activity and toggle the ‘output panel’.
 
 |image1|
 
@@ -131,13 +124,10 @@ quotes.
 At the end of the task, the student should understand:
 
 -  Whatever is within the quotes is displayed as it is.
-
 -  If a comma or a number is within quotes, it will be shown like that
       (see third \`Hello World`)
-
 -  In ‘Hello’, ‘World’, Python automatically inserts a space in between
       them, This is done with the ‘sep=’ arguments.
-
    -  Example:
 
 .. code-block:: python
@@ -158,7 +148,7 @@ the working of each type of syntax.
 
 **MILESTONES**:
 
--  Creates the base for displaying formatted data in the output.
+-  THis module creates the base for displaying formatted data in the output.
 
 **EXERCISES**:
 
@@ -184,14 +174,14 @@ the working of each type of syntax.
 *OBJECTIVE: Learning the arithmetic use of Python, using operators and
 syntax*
 
-**Python Interpreter** can be introduced to the students, and how they
+**Python Interpreter** can be introduced to the students and how they
 can use it as a calculator. Providing them with questions on how to
-solve the sums, difference, multiplication etc, day-to-day problems and
+solve the sums, difference, multiplication etc., day-to-day problems and
 their solutions using Python can be introduced to the students.
 
 Examples:
 
--  Find the sum of 258 chocolates and 600 toffees using the *Python Interpreter*
+-  Find the sum of 258 chocolates and 600 toffees using the *Python Interpreter*.
 
 >>> 258 + 600
 858
@@ -199,16 +189,13 @@ Examples:
 
 
 **MILESTONES**:
-
 -  Helps the students to understand that a Python interpreter can do
-      pretty much anything we do in the normal calculator
+      pretty much anything we do in the normal calculator.
 
 **EXERCISES**:
 
-1. Find the sum of 8626 and 4566 using Python interpreter
-
+1. Find the sum of 8626 and 4566 using Python interprete
 2. Find the product of 4862 and 15674
-
 3. **HOTS**: Find the answer of the following mathematical expression
 
 ..
@@ -239,10 +226,9 @@ Examples:
 
 **MILESTONES**:
 
--  Learn how to declare a variable
-
+-  Learn how to declare a variable.
 -  Learn the benefits of defining a variable, such as removing the need
-      for doing it again and again, changing input from time to time
+      for doing it again and again, changing input from time to time.
 
 **EXERCISES**:
 
@@ -267,7 +253,7 @@ DURATION: 15 MINUTES
 
 *AGE CATEGORY: 11+*
 
-*OBJECTIVE: Displaying variables in the stdout*
+*OBJECTIVE: Displaying variables in the output panel*
 
 The same variable implementation can be shown in the script mode or a
 **Jupyter Notebook**. This can be re-shown with the interactive and
@@ -296,10 +282,10 @@ format his answer with strings and the print statement.
 
 **MILESTONES**:
 
--  The script mode can be made intuitive by providing meaningful results
+-  The script mode can be made intuitive by providing meaningful results.
 
 -  A student realizes that a number can not only be the output but also
-      a text or string item
+      a text or string item.
 
 **Module 6: Data types [A] Numerical Data Types**
 -------------------------------------------------
@@ -370,10 +356,10 @@ can be comprehensively explained.
 
 **EXERCISES**:
 
-1. Find a square root of 6250000 using the Python interpreter
+1. Find a square root of 6250000 using the Python interpreter.
 
 2. HOTS: Find the circumference of a circle with radius as 25 units
-      using Python’s built-in math module **π**
+      using Python’s built-in math module **π**.
 
 .. _section-4:
 
